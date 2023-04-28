@@ -12,6 +12,10 @@
         python download-wikipedia.py \
           --page_list=./wikipedia-featured.txt \
           --output_dir=./corpus
+
+        python download-wikipedia.py \
+          --page_list=./wikipedia-legindaj.txt \
+          --output_dir=./corpus
         
         # download Marvirinstrato
         wget -O ./corpus/marvirinstrato.txt \
@@ -24,7 +28,7 @@
   The corpus consists of text from the following sources:
 
  * [Tekstaro](https://tekstaro.com/elshuti.html) excluding _Homaranismo (1906)_
- * Wikipedia [Elstaraj artikoloj](https://eo.wikipedia.org/wiki/Kategorio:Elstaraj_artikoloj)
+ * Wikipedia [Elstaraj artikoloj](https://eo.wikipedia.org/wiki/Kategorio:Elstaraj_artikoloj) and [Legindaj artikoloj](https://eo.wikipedia.org/wiki/Kategorio:Legindaj_artikoloj)
  * [Marvirinstrato](https://www.smashwords.com/books/view/267558)
  * Esperanto subset of [OSCAR](https://oscar-project.org/)
 
