@@ -124,6 +124,7 @@ for filename in os.listdir(args.corpus_dir):
             continue
 
         # must be at least 75% "esperanto-ish"
+        # - this at least filters our a bunch of chinese and emoji text from oscar.eo.txt
         tmp1 = re.sub("[A-Za-z ]+", "", line)
         tmp2 = re.sub("\s", "", line)
         if len(tmp1) * 4 > len(tmp2):
